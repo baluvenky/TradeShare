@@ -1,0 +1,29 @@
+{
+  "name": "tradeshare",
+  "version": "1.0.0",
+  "description": "Trading signal processing system with TypeScript",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "serve": "node dist/server.js",
+    "dev": "ts-node src/index.ts",
+    "dev:serve": "ts-node src/server.ts",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "trading",
+    "signals",
+    "typescript",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "rimraf": "^5.0.0",
+    "nodemon": "^3.0.0"
+  }
+}
