@@ -64,6 +64,32 @@ processor.on('signal:LONG', (execution) => {
 
 ## Incoming Message Formats (HTTP API)
 
+# message API body sample formats
+## {"message":"MCX:FUT:SILVER:LONG:25000"}
+## {"message":"MCX:FUT:SILVER:LONG_ADD:25000"}
+## {"message":"MCX:FUT:SILVER:LONG_EXIT:25000"}
+## {"message":"MCX:FUT:SILVER:SHORT:25000"}
+## {"message":"MCX:FUT:SILVER:SHORT_ADD:25000"}
+## {"message":"MCX:FUT:SILVER:SHORT_EXIT:25000"}
+
+
+
+## {"message":"MCX:FUT:SILVER:LONG:25000"}
+## {"message":"MCX:FUT:SILVER:LONG_ADD:25000"}
+## {"message":"MCX:FUT:SILVER:LONG_EXIT:25000"}
+## {"message":"MCX:FUT:SILVER:SHORT:25000"}
+## {"message":"MCX:FUT:SILVER:SHORT_ADD:25000"}
+## {"message":"MCX:FUT:SILVER:SHORT_EXIT:25000"}
+
+
+## {"message":"NIFTY50:OPT:NIFTY:LONG:22933"}
+## {"message":"NIFTY50:OPT:NIFTY:LONG_EXIT:22933"}
+## {"message":"NIFTY50:OPT:NIFTY:LONG_ADD:22933"}
+## {"message":"NIFTY50:OPT:NIFTY:SHORT:22933"}
+## {"message":"NIFTY50:OPT:NIFTY:SHORT_ADD:22933"}
+## {"message":"NIFTY50:OPT:NIFTY:SHORT_EXIT:22933"}
+#
+
 The server accepts a variety of message formats via `POST /message`.
 
 - Simple action format: `ACTION:PRICE` (e.g. `Long:126489`).
